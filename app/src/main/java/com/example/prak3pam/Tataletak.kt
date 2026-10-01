@@ -43,7 +43,6 @@ fun TataletakBoxColumnRow(modifier: Modifier = Modifier) {
                 .size(100.dp)
                 .clip(CircleShape)
         )
-        //
         Spacer(modifier = Modifier.height(16.dp))
         Text(
             text = "Praktikum PAM",
