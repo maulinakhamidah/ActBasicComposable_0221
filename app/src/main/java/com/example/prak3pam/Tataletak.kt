@@ -1,114 +1,80 @@
 package com.example.prak3pam
 
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.fillMaxHeight
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.material3.Button
+import androidx.compose.material3.Card
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.res.painterResource
-import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-
-@Composable
-fun TataletakColumn(modifier: Modifier = Modifier) {
-    Column(
-        modifier = modifier.padding(top = 20.dp, start = 20.dp, end = 20.dp)
-    ) {
-        Text(text = "Komponen 1")
-        Text(text = "Komponen 2")
-        Text(text = "Komponen 3")
-        Text(text = "Komponen 4")
-    }
-}
-
-@Composable
-fun TataletakRow(modifier: Modifier = Modifier) {
-    Row(
-        modifier = modifier.fillMaxWidth(),
-        horizontalArrangement = Arrangement.SpaceEvenly
-    ) {
-        Text(text = "Komponen 1")
-        Text(text = "Komponen 2")
-        Text(text = "Komponen 3")
-        Text(text = "Komponen 4")
-    }
-}
-
-@Composable
-fun TataletakBox(modifier: Modifier = Modifier) {
-    Box(
-        modifier = modifier
-            .fillMaxHeight()
-            .fillMaxWidth(),
-        contentAlignment = Alignment.Center
-    ) {
-        Text(text = "Box 1")
-        Text(text = "Column 1")
-        Text(text = "Row 1")
-        Text(text = "Row 2")
-        Text(text = "Row 3")
-    }
-}
+import com.example.prak3pam.ui.theme.Prak3PAMTheme
 
 @Composable
 fun TataletakBoxColumnRow(modifier: Modifier = Modifier) {
-    val gambar = painterResource(id = R.drawable.gambar)
-
-    Column {
+    Column(
+        modifier = modifier
+            .fillMaxSize()
+            .padding(16.dp),
+        horizontalAlignment = Alignment.CenterHorizontally,
+        verticalArrangement = Arrangement.Center
+    ) {
+        Image(
+            painter = painterResource(id = R.drawable.ic_launcher_foreground),
+            contentDescription = "Logo",
+            modifier = Modifier
+                .size(100.dp)
+                .clip(CircleShape)
+        )
+        Spacer(modifier = Modifier.height(16.dp))
+        Text(
+            text = "Praktikum PAM",
+            fontSize = 20.sp,
+            fontWeight = FontWeight.Bold
+        )
+        Text(text = "Nama: Maulina Khamidah - NIM: 20220140221")
+        Spacer(modifier = Modifier.height(16.dp))
         Row(
-            modifier = modifier.fillMaxWidth(),
-            horizontalArrangement = Arrangement.SpaceEvenly
+            modifier = Modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.SpaceBetween
         ) {
-            Text(text = "Col1 Row1 Komponen1")
-            Text(text = "Col1 Row1 Komponen2")
-            Text(text = "Col1 Row1 Komponen3")
+            Text(text = "Kiri")
+            Text(text = "Kanan")
         }
-
-        Row(
-            modifier = modifier.fillMaxWidth(),
-            horizontalArrangement = Arrangement.SpaceEvenly
-        ) {
-            Text(text = "Col2 Row2 Komponen1")
-            Text(text = "Col2 Row2 Komponen2")
-            Text(text = "Col2 Row2 Komponen3")
+        Spacer(modifier = Modifier.height(16.dp))
+        Button(onClick = { }) {
+            Text("Klik Saya")
         }
+    }
+}
 
-        Spacer(modifier = Modifier.height(10.dp))
+@Composable
+fun ItemCard(nama: String) {
+    Card(modifier = Modifier.padding(8.dp)) {
+        Text(text = nama, modifier = Modifier.padding(16.dp))
+    }
+}
 
-        Box(
-            modifier = modifier
-                .fillMaxWidth()
-                .height(300.dp)
-                .background(color = Color.Cyan),
-            contentAlignment = Alignment.Center
-        ) {
-            Image(
-                painter = gambar,
-                contentDescription = null,
-                contentScale = ContentScale.Fit
-            )
-            Text(
-                text = "My Design",
-                fontSize = 50.sp,
-                color = Color.Red,
-                fontWeight = FontWeight.Bold,
-                fontFamily = FontFamily.Cursive,
-                modifier = Modifier.align(Alignment.Center)
-            )
-        }
+@Preview(showBackground = true)
+@Composable
+fun TataletakPreview() {
+    Prak3PAMTheme {
+        TataletakBoxColumnRow()
     }
 }
