@@ -16,6 +16,7 @@ import com.example.prak3pam.ui.theme.Prak3PAMTheme
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        //commit4
         setContent {
             Prak3PAMTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
