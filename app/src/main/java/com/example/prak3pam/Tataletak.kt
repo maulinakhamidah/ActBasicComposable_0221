@@ -27,9 +27,9 @@ import androidx.compose.ui.unit.sp
 import com.example.prak3pam.ui.theme.Prak3PAMTheme
 
 @Composable
-//
 fun TataletakBoxColumnRow(modifier: Modifier = Modifier) {
     Column(
+        //
         modifier = modifier
             .fillMaxSize()
             .padding(16.dp),
