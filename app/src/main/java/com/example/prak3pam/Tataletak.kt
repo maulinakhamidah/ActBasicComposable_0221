@@ -39,11 +39,11 @@ fun TataletakBoxColumnRow(modifier: Modifier = Modifier) {
         Image(
             painter = painterResource(id = R.drawable.ic_launcher_foreground),
             contentDescription = "Logo",
-            //
             modifier = Modifier
                 .size(100.dp)
                 .clip(CircleShape)
         )
+        //
         Spacer(modifier = Modifier.height(16.dp))
         Text(
             text = "Praktikum PAM",
