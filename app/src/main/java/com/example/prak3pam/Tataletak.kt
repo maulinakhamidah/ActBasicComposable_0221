@@ -37,9 +37,9 @@ fun TataletakBoxColumnRow(modifier: Modifier = Modifier) {
         verticalArrangement = Arrangement.Center
     ) {
         Image(
-            //
             painter = painterResource(id = R.drawable.ic_launcher_foreground),
             contentDescription = "Logo",
+            //
             modifier = Modifier
                 .size(100.dp)
                 .clip(CircleShape)
