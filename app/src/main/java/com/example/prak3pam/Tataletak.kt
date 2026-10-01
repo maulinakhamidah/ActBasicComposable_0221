@@ -49,6 +49,7 @@ fun TataletakBoxColumnRow(modifier: Modifier = Modifier) {
             fontSize = 20.sp,
             fontWeight = FontWeight.Bold
         )
+        //
         Text(text = "Nama: Maulina Khamidah - NIM: 20220140221")
         Spacer(modifier = Modifier.height(16.dp))
         Row(
