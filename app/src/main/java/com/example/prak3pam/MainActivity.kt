@@ -10,6 +10,7 @@ import androidx.compose.ui.Modifier
 import com.example.prak3pam.ui.theme.Prak3PAMTheme
 
 class MainActivity : ComponentActivity() {
+    //
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
