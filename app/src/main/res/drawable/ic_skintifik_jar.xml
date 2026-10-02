@@ -1,0 +1,96 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+
+    <!-- Outer Soft Glow Shadow -->
+    <path
+        android:fillColor="#1F000000"
+        android:pathData="M 40,165 C 40,165 70,175 100,175 C 130,175 160,165 160,165 C 160,165 130,158 100,158 C 70,158 40,165 40,165 Z"/>
+
+    <!-- Skintifik Jar Body Base -->
+    <path
+        android:pathData="M 45,85 L 155,85 C 158,85 160,88 159,92 L 150,150 C 148,158 140,164 130,164 L 70,164 C 60,164 52,158 50,150 L 41,92 C 40,88 42,85 45,85 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="40"
+                android:startY="85"
+                android:endX="160"
+                android:endY="164"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#FF00D4FF"/>
+                <item android:offset="0.5" android:color="#FF0099FF"/>
+                <item android:offset="1.0" android:color="#FF6B11FF"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Glass Reflection Highlight on Jar -->
+    <path
+        android:pathData="M 55,92 L 75,92 L 68,155 L 58,150 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="55"
+                android:startY="92"
+                android:endX="75"
+                android:endY="155"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#99FFFFFF"/>
+                <item android:offset="1.0" android:color="#1AFFFFFF"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Jar Lid (Top Silver/White Cap) -->
+    <path
+        android:pathData="M 38,65 L 162,65 C 166,65 168,69 167,73 L 164,83 C 163,86 160,88 156,88 L 44,88 C 40,88 37,86 36,83 L 33,73 C 32,69 34,65 38,65 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="35"
+                android:startY="65"
+                android:endX="165"
+                android:endY="88"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#FFFFFF"/>
+                <item android:offset="0.5" android:color="#FFE0F7FA"/>
+                <item android:offset="1.0" android:color="#FFB2EBF2"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Lid Rim Accent Line -->
+    <path
+        android:fillColor="#FF00B4D8"
+        android:pathData="M 35,84 L 165,84 L 165,87 L 35,87 Z"/>
+
+    <!-- Product Text "5X CERAMIDE" Label Box -->
+    <path
+        android:fillColor="#33FFFFFF"
+        android:pathData="M 60,105 L 140,105 C 143,105 145,107 145,110 L 145,135 C 145,138 143,140 140,140 L 60,140 C 57,140 55,138 55,135 L 55,110 C 55,107 57,105 60,105 Z"/>
+
+    <!-- Text line representation inside label -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M 70,113 L 130,113 L 130,118 L 70,118 Z"/>
+    <path
+        android:fillColor="#FFB2EBF2"
+        android:pathData="M 78,124 L 122,124 L 122,128 L 78,128 Z"/>
+    <path
+        android:fillColor="#FFFF80AB"
+        android:pathData="M 85,132 L 115,132 L 115,135 L 85,135 Z"/>
+
+    <!-- Floating Water Drops & Sparkles -->
+    <path
+        android:fillColor="#FF80DEEA"
+        android:pathData="M 30,50 C 30,50 25,40 30,35 C 35,30 40,35 40,35 C 40,35 45,45 40,50 C 35,55 30,50 30,50 Z"/>
+
+    <path
+        android:fillColor="#FFF48FB1"
+        android:pathData="M 170,110 L 173,117 L 180,120 L 173,123 L 170,130 L 167,123 L 160,120 L 167,117 Z"/>
+
+    <path
+        android:fillColor="#FF80DEEA"
+        android:pathData="M 25,100 L 27,105 L 32,107 L 27,109 L 25,114 L 23,109 L 18,107 L 23,105 Z"/>
+</vector>
